@@ -13,19 +13,14 @@ form {
   grid-template-columns: 50%;
   font-size: 1.5em;
   font-family: Arial, san-serif;
-  width: 40%;
+  width: 70%;
   margin: auto;
-  border: solid black 2px;
+  border: solid black 3px;
   background-color: rgb(200, 200, 220, 80%);
 }
 
-div div {
-  padding: 15px 20px;
-}
-
-#name {
-  width 50%;
-  display: inline-block;
+.question {
+  font-weight: bold;
 }
 
 #title{
@@ -45,11 +40,20 @@ div div {
 }
 
 label {
-  padding: 10px;
+  display: block;
+  padding: 5px;
+  margin: 5px 10px 5px 10px;
 }
 
-#problem {
-  height: 200px;
-  width: 400px;
-  display: inline-block;
+#interestingfact {
+  height: 150px;
+  width: 80%;
+  margin: auto;
+  display: block;
+  border: solid black 2px;
+}
+
+#submit {
+  display: block;
+  margin: 10px auto 10px;
 }

@@ -1,36 +1,39 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
   <title>Survey Form</title>
 </head>
 <body>
   <h1 id="title">Personal Survey</h1>
-  <p id="description">Please give me all of your personal information by
-    completing this survey</p>
+  <p id="description">Please tell me about yourself by filling in this form.</p>
   <div>
     <form id="survey-form">
       <div>
-        <label id="name-label">
-          Your Full Name: <input id="name" type="text" placeholder="Name"
-          required>
+        <label class="question" id="name-label">Full Name: <input id="name" type="text"
+          placeholder="Name" required>
         </label>
       </div>
       <div>
-        <label id="email-label">
-          Your Actual Email Address: <input id="email" type="email"
+        <label class="question" id="email-label">Email Address: <input id="email" type="email"
           placeholder="Email" required>
         </label>
       </div>
       <div>
-        <label id="number-label">
-          Your Favourite Number: <input id="number" type="number"
-          placeholder="7" min="5" max="8">
+        <label class="question" id="number-label">
+          Favourite Number: <input id="number" type="number" placeholder="29"
+          min="0" max="100">
         </label>
       </div>
       <div>
-        <label id="dropdown-label">Your Favourite Colour
+        <label class="question" id="dropdown-label">Favourite Colour
           <select id="dropdown">
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+            <option value="purple">Purple</option>
             <option value="brown">Brown</option>
+            <option value="grey">Grey</option>
             <option value="mauve">Mauve</option>
             <option value="turquoise">Turquoise</option>
             <option value="stripy">Stripy</option>
@@ -38,39 +41,53 @@
         </label>
       </div>
       <div>
-        <label>
-          Favourite Food: <input type="radio" value="potato" name="food">Potato
+        <label class="question">
+          Favourite Time of Day:
         </label>
         <label>
-          <input type="radio" value="crumble" name="food">Crumble
+          <input type="radio" value="dawn" name="timeofday">Dawn
+        </label>
+        <label>
+          <input type="radio" value="morning" name="timeofday">Morning
+        </label>
+        <label>
+          <input type="radio" value="noon" name="timeofday">Noon
+        </label>
+        <label>
+          <input type="radio" value="afternoon" name="timeofday">Afternoon
+        </label>
+        <label>
+          <input type="radio" value="evening" name="timeofday">Evening
+        </label>
+        <label>
+          <input type="radio" value="night" name="timeofday">Night
         </label>
       </div>
       <div>
-        Tablecloth patterns liked:
-        <div>
-          <label for="paid"><input id="plaid" type="checkbox" name="tablecloth"
-            value="plaid"> Plaid</label>
-          <label for="checked"><input id="checked" type="checkbox"
-            name="tablecloth" value="checked"> Checked</label>
-          <label for="gingham"><input id="gingham" type="checkbox"
-            name="tablecloth" value="gingham"> Gingham</label>
-          <label for="red"><input id="red" type="checkbox" name="tablecloth"
-            value="red"> Red</label>
-      </div>
-     </div>
-     <div>
-      <label id="textarea">
-        So, what seems to be the problem?:
-       </label>
-       </div>
-     <div>
-      <textarea id="problem"  rows="8">It all started when...</textarea>
+        <label class="question">Acceptable Tablecloth Patterns:</label>
+        <label for="plain"><input id="plain" type="checkbox" name="tablecloth"
+          value="red"> Plain</label>
+        <label for="checked"><input id="checked" type="checkbox"
+          name="tablecloth" value="checked"> Checked</label>
+        <label for="stripes"><input id="stripes" type="checkbox" name="tablecloth"
+          value="stripes"> Stripes</label>
+        <label for="gingham"><input id="gingham" type="checkbox"
+          name="tablecloth" value="gingham"> Gingham</label>
+        <label for="plaid"><input id="plaid" type="checkbox" name="tablecloth"
+          value="plaid"> Plaid</label>
+        <label for="floral"><input id="floral" type="checkbox" name="tablecloth"
+          value="floral"> Floral</label>
       </div>
       <div>
-        <button id="submit" type="submit">I agree to any and all uses of this
-          data</button>
+        <label class="question" id="textarea">An Interesting Fact About Myself:</label>
+        <textarea id="interestingfact"  rows="8">An interesting fact about myself is...</textarea>
+      </div>
+      <div>
+        <button id="submit" type="submit">Submit</button>
       </div>
     </form>
   </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
