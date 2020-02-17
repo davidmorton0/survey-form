@@ -1,0 +1,76 @@
+<html>
+<head>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <title>Survey Form</title>
+</head>
+<body>
+  <h1 id="title">Personal Survey</h1>
+  <p id="description">Please give me all of your personal information by
+    completing this survey</p>
+  <div>
+    <form id="survey-form">
+      <div>
+        <label id="name-label">
+          Your Full Name: <input id="name" type="text" placeholder="Name"
+          required>
+        </label>
+      </div>
+      <div>
+        <label id="email-label">
+          Your Actual Email Address: <input id="email" type="email"
+          placeholder="Email" required>
+        </label>
+      </div>
+      <div>
+        <label id="number-label">
+          Your Favourite Number: <input id="number" type="number"
+          placeholder="7" min="5" max="8">
+        </label>
+      </div>
+      <div>
+        <label id="dropdown-label">Your Favourite Colour
+          <select id="dropdown">
+            <option value="brown">Brown</option>
+            <option value="mauve">Mauve</option>
+            <option value="turquoise">Turquoise</option>
+            <option value="stripy">Stripy</option>
+          </select>
+        </label>
+      </div>
+      <div>
+        <label>
+          Favourite Food: <input type="radio" value="potato" name="food">Potato
+        </label>
+        <label>
+          <input type="radio" value="crumble" name="food">Crumble
+        </label>
+      </div>
+      <div>
+        Tablecloth patterns liked:
+        <div>
+          <label for="paid"><input id="plaid" type="checkbox" name="tablecloth"
+            value="plaid"> Plaid</label>
+          <label for="checked"><input id="checked" type="checkbox"
+            name="tablecloth" value="checked"> Checked</label>
+          <label for="gingham"><input id="gingham" type="checkbox"
+            name="tablecloth" value="gingham"> Gingham</label>
+          <label for="red"><input id="red" type="checkbox" name="tablecloth"
+            value="red"> Red</label>
+      </div>
+     </div>
+     <div>
+      <label id="textarea">
+        So, what seems to be the problem?:
+       </label>
+       </div>
+     <div>
+      <textarea id="problem"  rows="8">It all started when...</textarea>
+      </div>
+      <div>
+        <button id="submit" type="submit">I agree to any and all uses of this
+          data</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

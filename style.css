@@ -1,0 +1,55 @@
+body {
+  background-color: #afeeee;
+}
+
+h1 {
+  margin: auto;
+  display: inline-block;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 50%;
+  font-size: 1.5em;
+  font-family: Arial, san-serif;
+  width: 40%;
+  margin: auto;
+  border: solid black 2px;
+  background-color: rgb(200, 200, 220, 80%);
+}
+
+div div {
+  padding: 15px 20px;
+}
+
+#name {
+  width 50%;
+  display: inline-block;
+}
+
+#title{
+  margin: auto;
+  text-align: center;
+  display: block;
+  padding: 20px 20px;
+  font-family: Arial, san-serif;
+  font-weight: 800;
+}
+
+#description{
+  margin: auto;
+  text-align: center;
+  display: block;
+  padding: 20px 20px;
+}
+
+label {
+  padding: 10px;
+}
+
+#problem {
+  height: 200px;
+  width: 400px;
+  display: inline-block;
+}
